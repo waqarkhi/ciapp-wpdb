@@ -166,7 +166,7 @@ class Orders extends CI_Controller {
 		} else {
 			if ($_POST) {
 				echo $this->session->userdata('logged_in');
-				if ($_POST['user'] =='interacademy' && $_POST['pass'] == 'karach!') {
+				if ($_POST['user'] =='username' && $_POST['pass'] == 'password') {
 					$userdata = array('logged_in' => true);
 					$this->session->set_userdata($userdata);
 					redirect('/');
